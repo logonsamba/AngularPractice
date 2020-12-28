@@ -1,0 +1,26 @@
+<form class="emp-forms" #empform="ngForm" (ngSubmit)="onSubmit(empform)" >
+<div class="form-row">
+<div class="form-group col-md-6">
+    <input type="hidden" name="Id" #Id="ngModel" [(ngModel)]="empService.SelectedEmployee.Id"/>
+    <input class="form-control"  placeholder="First Name"  name="FirstName" #FirstName="ngModel" [(ngModel)]="empService.SelectedEmployee.FirstName"/>
+</div>
+<div class="form-group col-md-6">
+    <input class="form-control"  placeholder="Last name" name="LastName" #LastName="ngModel" [(ngModel)]="empService.SelectedEmployee.LastName"/>
+</div>
+<div class="form-group col-md-6">
+    <input class="form-control"  placeholder="Email"  name="Email" #Email="ngModel" [(ngModel)]="empService.SelectedEmployee.Email"/>
+</div>
+<div class="form-group col-md-6">
+    <input class="form-control"  placeholder="Phone" name="Phone" #Phone="ngModel" [(ngModel)]="empService.SelectedEmployee.Phone"/>
+</div>
+<div class="form-group col-md-6">
+    <input class="form-control"  placeholder="City"  name="City" #City="ngModel" [(ngModel)]="empService.SelectedEmployee.City"/>
+</div>
+<div class="form-group col-md-8">
+    <button class="btn btn-info btn-lg btn-block" type="submit">Submit</button>
+</div>
+<div class="form-group col-md-4">
+    <button class="btn btn-dark btn-lg btn-block" type="reset">Reset</button>
+</div>
+</div>
+</form>
