@@ -16,7 +16,6 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm i rxjs-compat 
-    npm install
+    npm install --save rxjs-compat
     npm run build
   displayName: 'npm install and build'
