@@ -1,10 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Employee } from '../Model/employee';
 import { Http, Headers, Response, RequestOptions, RequestMethod } from '@angular/http';
-import { Observable } from 'rxjs/observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
-import { jsonpFactory } from '@angular/http/src/http_module';
+
 @Injectable({
   providedIn: 'root'
 })
